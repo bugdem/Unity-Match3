@@ -18,5 +18,5 @@ namespace GameEngine.Core
         {
 			CloudSaveManager.SaveSomeData(_input.text);
 		}
-    }
+	}
 }

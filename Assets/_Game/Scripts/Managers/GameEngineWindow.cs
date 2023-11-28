@@ -3,12 +3,12 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using Unity.VisualScripting.Antlr3.Runtime.Tree;
 
 namespace GameEngine.Editor 
 { 
-	public class GameEngineWindow : OdinMenuEditorWindow
+	public class GameEngineWindow : EditorWindow //OdinMenuEditorWindow
 	{
+		/*
 		[MenuItem("My Game/My Editor")]
 		private static void OpenWindow()
 		{
@@ -72,6 +72,7 @@ namespace GameEngine.Editor
 					panel.OnEndDrawEditors(selectedTreeMenuItem[0]);
 			}
 		}
+		*/
 	}
 
 	#region Panels
