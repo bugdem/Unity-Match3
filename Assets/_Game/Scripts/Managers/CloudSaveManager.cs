@@ -53,14 +53,14 @@ namespace GameEngine.Core
 			AuthenticationService.Instance.SignedIn += () =>
 			{
 				var playerId = AuthenticationService.Instance.PlayerId;
-				Debug.Log("Cloud Save Signed in as: " + playerId);
+				Debug.Log("Cloud Save, Signed in as: " + playerId);
 
 				SetInitializeStatus(CloudSaveInitializeEventType.Ready);
 			};
 			AuthenticationService.Instance.SignInFailed += s =>
 			{
 				// Take some action here...
-				Debug.Log("Cloud Save Failed!: " + s);
+				Debug.Log("Cloud Save, Failed!: " + s);
 
 				SetInitializeStatus(CloudSaveInitializeEventType.Failed);
 			};
