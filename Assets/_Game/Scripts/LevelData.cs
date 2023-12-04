@@ -33,6 +33,7 @@ namespace GameEngine.Core
     public class LevelData
     {
         public uint Index;
+        public string Name;
         public string Id;
 
         public LevelLimitationType Limitation;
